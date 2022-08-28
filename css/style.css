@@ -1,0 +1,145 @@
+:root {
+    --font-comic: 'Comic Neue', cursive;
+    --font-poppins:  'Poppins', sans-serif;
+    --color-black: #333;
+    --color-gray: #AAA;
+    --color-white: #fdfdfd;
+    --color-green: #81d340;
+    --color-pink: rgba(234, 2, 255, 1);
+    --color-blue: #0097ff;
+    --color-layer: rgba(25, 11, 122,  0.7);
+}
+
+* {
+    font-family: var(--font-poppins);
+    box-sizing: border-box;
+    color: var(--color-black);
+}
+
+html, body {
+    height: auto;
+    min-height: 100vh;
+}
+
+html {
+    background: linear-gradient(180deg, var(--color-pink) 0%, var(--color-blue) 100%) ; 
+}
+
+input:focus {
+    outline: none;
+}
+
+#register-conteiner {
+    max-width: 900px;
+    min-height: 80vh;
+    margin: 2rem auto; 
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px  27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#register-banner {
+    background: url("../img/bg-form.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+#banner-layer {
+    background-color: var(--color-layer);
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#register-banner h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: var(--color-white);
+    font-family: var(--font-poppins);
+}
+
+#register-form {
+    background-color: var(--color-white);
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-comic);
+}
+
+#register-form  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-family: var(--font-poppins);
+}
+
+#register-form p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--color-gray);
+    font-size: 0.8rem;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    
+}
+
+.form-control input {
+    border: none;
+    border-bottom: 1px solid var(--color-black);
+    padding: 0.6rem 0;
+    color: var(--color-gray);
+}
+
+#generate-password {
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#generate-password:hover {
+    color: var(--color-blue);
+}
+
+#register-form  #generated-password {
+    border: 1px solid var(--color-blue);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    color: var(--color-black);
+    text-align: center;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+#register-form  #generated-password p {
+    color: var(--color-green);
+    margin-bottom: 0.5rem;
+}
+
+#register-form input[type="submit"] {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    opacity: 0.8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#register-form input[type="submit"]:hover {
+    opacity: 1;
+}
